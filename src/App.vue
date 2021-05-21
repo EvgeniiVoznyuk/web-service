@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-navbar type="dark" variant="dark">
+    <b-navbar-nav>
+      <b-nav-item href="#"></b-nav-item>
+       <b-nav-item href="#">Система моніторингу стану</b-nav-item>
+    </b-navbar-nav>
+  </b-navbar>
+  <div class="container mt-3">
+    <b-card
+      title=""
+      tag="article"
+      style="width: 500px; height: 600px;"
+      class="mb-2"
+    >
+    </b-card>
+    <b-card
+      title=""
+      tag="article"
+      style="width: 500px; height: 600px;"
+      class="mb-2"
+    >
+    </b-card>
+    <b-card
+      title=""
+      tag="article"
+      style="width: 500px; height: 600px;"
+      class="mb-2"
+    >
+    </b-card>
+  </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  padding-top: 150px;
+  display: flex;
+  gap: 60px;
 }
 </style>
